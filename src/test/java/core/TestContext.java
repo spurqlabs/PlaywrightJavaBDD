@@ -8,8 +8,6 @@ import pages.CalculatorPage;
 
 public class TestContext {  //TestContext class, which acts as a container to store all instances for test framework
 
-    public static WebDriver driver;
-    //Represents the WebDriver instance.
 
     public static Page page;
     //Refers to Playwright’s Page object. This controls a specific browser tab or page in a Playwright-based test

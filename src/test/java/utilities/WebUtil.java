@@ -4,7 +4,6 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import core.TestContext;
-import org.openqa.selenium.WebDriver;
 
 
 public class WebUtil extends TestContext {
@@ -18,9 +17,6 @@ public class WebUtil extends TestContext {
         return page;
     }
 
-    public static void tearDown() {
-        driver.quit();
-    }
     public static void tearDownPW() {
         page.close();
     }   // It is called to close the current page/tag
