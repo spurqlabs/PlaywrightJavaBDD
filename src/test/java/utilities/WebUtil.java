@@ -7,13 +7,13 @@ import core.TestContext;
 
 
 public class WebUtil extends TestContext {
-    public static WebDriver driver;
+//    public static WebDriver driver;
 
     public static Page initBrowser(){
       //Initializes a browser session using Playwright's Chromium browser
         Playwright playwright = Playwright.create();  //Creates an instance of Playwright
         browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
-        page = browser.newPage(); //Creates a new page/tab within the launched browser
+        page = browser.newPage();//Creates a new page/tab within the launched browser
         return page;
     }
 
